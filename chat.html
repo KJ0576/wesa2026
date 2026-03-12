@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WESA | Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="logo">WESA</a>
+      <nav class="main-nav" aria-label="主要ナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="activities.html">Activities</a>
+        <a href="events.html">Events</a>
+        <a href="join.html">Join</a>
+        <a href="chat.html" aria-current="page">Chat</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-secondary" href="events.html">新歓日程</a>
+        <a class="btn btn-primary" href="join.html">参加する</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-media js-reveal">
+          <img src="76763.jpg" alt="質問対応イメージ">
+        </div>
+        <div class="hero-copy js-reveal">
+          <h1>質問する</h1>
+          <p>日程、活動内容などを聞いてみてください！現在修正中なので詳しい部分は@増田歩夢にLINEで聞いてください！</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section js-reveal">
+      <div class="container">
+        <div class="card" data-chat-panel>
+          <h2>Chatbot</h2>
+          <p>以下の質問を選んでください</p>
+          <input type="text" data-chat-input placeholder="日程、活動内容、初心者向け情報などを聞いてください。">
+          <div class="quick-list">
+            <button data-question="schedule">新歓日程を教えて</button>
+            <button data-question="beginner">初心者でも参加できる？</button>
+            <button data-question="frequency">活動は週何回？</button>
+            <button data-question="fee">参加費はある？</button>
+            <button data-question="diff">Debate / Speech / Discussion / Lesson の違いは？</button>
+          </div>
+          <div class="hero-actions">
+            <button class="btn btn-secondary" data-chat-send>回答する</button>
+          </div>
+          <div class="answer-box" data-chat-answer>質問を選択してください。</div>
+          <div class="related-links" data-chat-related></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="footer-links">
+        <a href="https://www.instagram.com/wesa_2026/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://x.com/wesa_shinkan" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://line.me/" target="_blank" rel="noopener noreferrer">LINE</a>
+      </div>
+      <p>お問い合わせ: wesagoyaku76@gmail.com</p>
+      <p>活動場所: 早稲田大学戸山キャンパス</p>
+    </div>
+  </footer>
+
+  <button class="btn btn-primary chat-fab" data-chat-toggle>質問する</button>
+  <aside class="chat-widget" data-chat-panel hidden>
+    <h3>質問する</h3>
+    <input type="text" data-chat-input placeholder="日程、活動内容、初心者向け情報などを聞いてください。">
+    <div class="quick-list">
+      <button data-question="schedule">新歓日程を教えて</button>
+      <button data-question="beginner">初心者でも参加できる？</button>
+      <button data-question="frequency">活動は週何回？</button>
+      <button data-question="fee">参加費はある？</button>
+      <button data-question="diff">Debate / Speech / Discussion / Lesson の違いは？</button>
+    </div>
+    <div class="hero-actions">
+      <button class="btn btn-secondary" data-chat-send>回答する</button>
+    </div>
+    <div class="answer-box" data-chat-answer>質問を選択してください。</div>
+    <div class="related-links" data-chat-related></div>
+  </aside>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
+
